@@ -1,4 +1,3 @@
-
 class Song
 
   @@all = []
@@ -14,8 +13,11 @@ class Song
     @@all << self
   end
 
-  def artist_name
-    !!self.artist ? self.artist.name : nil
-  end
-
+  def artist_name 
+    if self.artist
+      self.artist.name 
+    else 
+      nil 
+    end
+  end 
 end
